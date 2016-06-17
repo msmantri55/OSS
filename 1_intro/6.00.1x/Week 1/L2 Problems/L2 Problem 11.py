@@ -1,4 +1,5 @@
-# Assume that two variables, `varA` and `varB`, are assigned values, either numbers or strings.
+# Assume that two variables, `varA` and `varB`, are assigned values, either
+# numbers or strings.
 #
 # Write a piece of Python code that prints out one of the following messages:
 #

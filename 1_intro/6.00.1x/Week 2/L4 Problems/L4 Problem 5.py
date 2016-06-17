@@ -1,6 +1,11 @@
-#  Write a Python function, `clip(lo, x, hi)` that returns `lo` if `x` is less than `lo`; `hi` if `x` is greater than `hi`; and `x` otherwise. For this problem, you can assume that `lo` < `hi`.
+#  Write a Python function, `clip(lo, x, hi)` that returns `lo` if `x` is less
+# than `lo`; `hi` if `x` is greater than `hi`; and `x` otherwise. For this
+# problem, you can assume that `lo` < `hi`.
 
-# Don't use any conditional statements for this problem. Instead, use the built in Python functions min and max. You may wish to read the documentation on min and the documentation on max, and play around with these functions a bit in your interpreter, before beginning this problem.
+# Don't use any conditional statements for this problem. Instead, use the built
+# in Python functions min and max. You may wish to read the documentation on min
+# and the documentation on max, and play around with these functions a bit in
+# your interpreter, before beginning this problem.
 
 # This function takes in three numbers and returns a single number.
 
