@@ -39,13 +39,13 @@ while updatedBalance > 0:
     # increment month
     month += 1
 
-    # print lowest payment if no balance remains
     if updatedBalance < 0:
+        # print lowest payment if no balance remains
         print('Lowest Payment: %(payment)i') % \
             { 'payment': minFixedMonthlyPayment }
         break
-    # otherwise, reset balance, increase payment by $10, and try again
     elif month > 12:
+        # reset balance, increase payment by $10, and try again
         month = 1
         updatedBalance = balance
         minFixedMonthlyPayment += 10
