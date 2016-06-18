@@ -26,3 +26,26 @@
 # (Previous balance) - (Minimum fixed monthly payment)
 #     Updated balance each month =
 # (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
+
+updatedBalance = balance
+minFixedMonthlyPayment = 10
+month = 1
+
+while updatedBalance > 0:
+    monthlyInterestRate = annualInterestRate / 12.0
+    monthlyUnpaidBalance = updatedBalance - minFixedMonthlyPayment
+    updatedBalance = monthlyUnpaidBalance + (monthlyInterestRate * monthlyUnpaidBalance)
+
+    # increment month
+    month += 1
+
+    # print lowest payment if no balance remains
+    if updatedBalance < 0:
+        print('Lowest Payment: %(payment)i') % \
+            { 'payment': minFixedMonthlyPayment }
+        break
+    # otherwise, reset balance, increase payment by $10, and try again
+    elif month > 12:
+        month = 1
+        updatedBalance = balance
+        minFixedMonthlyPayment += 10
