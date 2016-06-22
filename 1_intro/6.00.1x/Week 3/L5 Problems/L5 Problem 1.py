@@ -4,8 +4,7 @@
 # itself `exp` times.
 
 # This function should take in two values - `base` can be a float or an integer;
-# `exp` will be an integer >= 0. It should return one numerical value. Your code
-# must be iterative - use of the `**` operator is not allowed.
+# `exp` will be an integer >= 0. It should return one numerical value.
 
 def iterPower(base, exp):
     '''
