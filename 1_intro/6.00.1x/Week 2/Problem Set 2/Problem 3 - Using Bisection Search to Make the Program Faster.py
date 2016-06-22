@@ -9,7 +9,10 @@
 # system might be limited to an error message complaining about too much time
 # taken.)
 #
-# Well then, how can we calculate a more accurate fixed monthly payment than we did in Problem 2 without running into the problem of slow code? We can make this program run faster using a technique introduced in lecture - bisection search!
+# Well then, how can we calculate a more accurate fixed monthly payment than we
+# did in Problem 2 without running into the problem of slow code? We can make
+# this program run faster using a technique introduced in lecture - bisection
+# search!
 #
 # The following variables contain values as described below:
 #
@@ -34,9 +37,9 @@
 #
 # In short:
 #
-#     Monthly interest rate = (Annual interest rate) / 12.0
-#     Monthly payment lower bound = Balance / 12
-#     Monthly payment upper bound = (Balance x (1 + Monthly interest rate)12) / 12.0
+# Monthly interest rate = (Annual interest rate) / 12.0
+# Monthly payment lower bound = Balance / 12
+# Monthly payment upper bound = (Balance x (1 + Monthly interest rate)12) / 12.0
 #
 # Write a program that uses these bounds and bisection search (for more info
 # check out the Wikipedia page on bisection search) to find the smallest monthly
