@@ -1,5 +1,6 @@
-# Write a function called ndigits, that takes an integer x (either positive or negative) as an
-# argument. This function should return the number of digits in x.
+# Write a function called ndigits, that takes an integer x (either positive or
+# negative) as an argument. This function should return the number of digits in
+# x.
 
 def ndigits(integer):
     # Ensure we properly count the number of digits

@@ -1,6 +1,7 @@
-# `isWordGuessed` takes in two parameters - a string, `secretWord`, and a list of letters,
-# `lettersGuessed` This function returns a boolean - True if `secretWord` has been guessed (ie,
-# all the letters of `secretWord` are in `lettersGuessed`) and False otherwise.
+# `isWordGuessed` takes in two parameters - a string, `secretWord`, and a list
+# of letters, `lettersGuessed` This function returns a boolean - True if
+# `secretWord` has been guessed (ie, all the letters of `secretWord` are in
+# `lettersGuessed`) and False otherwise.
 
 # Example Usage:
 
@@ -33,10 +34,11 @@ def isWordGuessed(secretWord, lettersGuessed):
     else:
         return match
 
-# `getGuessedWord` takes in two parameters - a string, `secretWord`, and a list of letters,
-# `lettersGuessed`. This function returns a string that is comprised of letters and
-# underscores, based on what letters in `lettersGuessed` are in `secretWord`. This shouldn't
-# be too different from `isWordGuessed`!
+# `getGuessedWord` takes in two parameters - a string, `secretWord`, and a list
+# of letters, `lettersGuessed`. This function returns a string that is
+# comprised of letters and underscores, based on what letters in
+# `lettersGuessed` are in `secretWord`. This shouldn't be too different from
+# `isWordGuessed`!
 
 # Example Usage:
 
@@ -63,9 +65,10 @@ def getGuessedWord(secretWord, lettersGuessed):
     
     return ' '.join(guess)
 
-# `getAvailableLetters` takes in one parameter - a list of letters, `lettersGuessed`. This
-# function returns a string that is comprised of lowercase English letters - all lowercase
-# English letters that are not in `lettersGuessed`.
+# `getAvailableLetters` takes in one parameter - a list of letters,
+# `lettersGuessed`. This function returns a string that is comprised of
+# lowercase English letters - all lowercase English letters that are not in
+# `lettersGuessed`.
 
 # Example Usage:
 

@@ -6,10 +6,11 @@
 # animals['d'].append('dog')
 # animals['d'].append('dingo')
 
-# We want to write some simple procedures that work on dictionaries to return information.
+# We want to write some simple procedures that work on dictionaries to return
+# information.
 
-# First, write a procedure, called howMany, which returns the sum of the number of values
-# associated with a dictionary. For example:
+# First, write a procedure, called howMany, which returns the sum of the number
+# of values associated with a dictionary. For example:
 
 # >>> print howMany(animals)
 # 6
