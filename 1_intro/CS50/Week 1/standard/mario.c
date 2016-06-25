@@ -46,7 +46,7 @@ int main(void) {
   for (int i = 1; i <= height; i++) {
     // first half
     addSpaces(spaces);
-    addHashes(i);
+    addHashes(i + 1);
     printf("\n");
 
     // decrease indentation
