@@ -23,10 +23,8 @@ char wrap(string plaintext, string keyword, int i, int counter) {
     }
 
     return output;
-    printf("%c", output);
   } else {
     return plaintext[i] + keyword[counter % strlen(keyword)];
-    printf("%c", plaintext[i] + keyword[counter % strlen(keyword)]);
   }
 
   return 0;
