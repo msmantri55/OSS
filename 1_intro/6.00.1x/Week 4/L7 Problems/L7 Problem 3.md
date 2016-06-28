@@ -1,7 +1,7 @@
 Consider the following function definition:
 
 ```
-def `maxOfThree(a,b,c) :
+def maxOfThree(a,b,c) :
     """
     a, b, and c are numbers
 
