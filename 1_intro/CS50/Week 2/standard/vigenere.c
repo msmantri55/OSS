@@ -13,6 +13,25 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+char wrap(string plaintext, string keyword, int i, int counter) {
+  if (plaintext[i] + keyword[counter % strlen(keyword)] > 122) {
+    int output = plaintext[i] + keyword[counter % strlen(keyword)] - 97;
+
+    // wrap text around alphabet if ASCII value > z
+    if (output > 122) {
+      output = 96 + output - 122;
+    }
+
+    return output;
+    printf("%c", output);
+  } else {
+    return plaintext[i] + keyword[counter % strlen(keyword)];
+    printf("%c", plaintext[i] + keyword[counter % strlen(keyword)]);
+  }
+
+  return 0;
+}
+
 int main(int argc, string argv[]) {
   string keyword = " ";
 
@@ -47,32 +66,10 @@ int main(int argc, string argv[]) {
     if (isalpha(plaintext[i])) {
       if (64 < plaintext[i] && plaintext[i] < 91) {
         // capital letters
-        if (plaintext[i] + keyword[counter % strlen(keyword)] > 90) {
-          int output = plaintext[i] + keyword[counter % strlen(keyword)] - 65;
-
-          // wrap text around alphabet if ASCII value > z
-          if (output > 122) {
-            output = 96 + output - 122;
-          }
-
-          printf("%c", toupper(output));
-        } else {
-          printf("%c", plaintext[i] + keyword[counter % strlen(keyword)]);
-        }
+        printf("%c", toupper(wrap(plaintext, keyword, i, counter)));
       } else if (96 < plaintext[i] && plaintext[i] < 123) {
         // lowercase letters
-        if (plaintext[i] + keyword[counter % strlen(keyword)] > 122) {
-          int output = plaintext[i] + keyword[counter % strlen(keyword)] - 97;
-
-          // wrap text around alphabet if ASCII value > z
-          if (output > 122) {
-            output = 96 + output - 122;
-          }
-
-          printf("%c", output);
-        } else {
-          printf("%c", plaintext[i] + keyword[counter % strlen(keyword)]);
-        }
+        printf("%c", wrap(plaintext, keyword, i, counter));
       }
 
       counter++;
