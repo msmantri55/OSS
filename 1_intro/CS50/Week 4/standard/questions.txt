@@ -1,0 +1,19 @@
+0.  BMP supports over 4 billion different colors, GIF supports 256 colors, and JPEG and PNG support 16 million colors.
+1.  GIF supports animation.
+2.  Lossy compression results in smaller file sizes (and therefore less data preserved), while lossless compression preserves more of the initial data after compression.
+3.  JPEG is lossy.
+4.  The file is marked for deletion by the file system to indicate that the location on the file drive is free to be overwritten.
+5.  Overwrite every address on the hard drive with ASCII NUL bytes.
+6.  stdint.h is a library for defining integer variables of specific sizes.
+7.  Uint8_t, uint32_t, int32_t, and uint16_t allow you to allocate the specific amount of memory required for certain things.
+8.  A BYTE is 1 byte, a DWORD is 4 bytes, a LONG is 4 bytes, and a WORD is 2 bytes
+9.  The first two bytes of any BMP file must be `BM` in ASCII
+10. bfSize refers to the total file size, while biSize refers to the size of the info header.
+11. TODO
+12. TODO
+13. TODO
+14. TODO
+15. TODO
+16. TODO
+17. TODO
+18. TODO
